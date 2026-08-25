@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    margin: 0;
+    background: #eef2f7;
+    color: #1e293b;
+}
+
+
+/* HEADER */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #1e40af
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+
+header p {
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+
+/* CONTENEDOR */
+
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: 30px auto;
+}
+
+
+/* TARJETAS */
+
+.card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    margin-bottom: 25px;
+}
+
+
+h2 {
+    margin-top: 0;
+    color: #1e40af;
+}
+
+
+/* FORMULARIO */
+
+.formulario {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #475569;
+}
+
+
+input {
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+input:focus {
+    border-color: #2563eb;
+}
+
+
+/* BOTON REGISTRAR */
+
+button {
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 10px 15px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.btn-registrar {
+    grid-column: span 3;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 14px;
+
+    font-size: 16px;
+}
+
+
+.btn-registrar:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* TITULO LISTA */
+
+.titulo-lista {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+
+#contador {
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* TABLA */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+th {
+    background: #1e40af;
+
+    color: white;
+}
+
+
+th,
+td {
+    padding: 12px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+tr:hover {
+    background: #f8fafc;
+}
+
+
+/* BOTONES */
+
+.editar {
+    background: #f59e0b;
+
+    color: white;
+
+    margin-right: 5px;
+}
+
+
+.eliminar {
+    background: #dc2626;
+
+    color: white;
+}
+
+
+.editar:hover,
+.eliminar:hover {
+    transform: scale(1.05);
+}
+
+
+/* MENSAJE VACIO */
+
+.vacio {
+    text-align: center;
+
+    color: #64748b;
+
+    padding: 30px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    color: #64748b;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+
+
+    .btn-registrar {
+        grid-column: span 1;
+    }
+
+
+    .titulo-lista {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 5px;
+    }
+
+
+    table {
+        font-size: 13px;
+    }
+
+
+    th,
+    td {
+        padding: 8px 5px;
+    }
+
+}
