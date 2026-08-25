@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro de Estudiantes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>📚 Registro de Estudiantes</h1>
+
+        <p>
+            Administración sencilla de registros académicos
+        </p>
+
+    </header>
+
+
+    <div class="container">
+
+
+        <!-- FORMULARIO -->
+
+        <div class="card">
+
+            <h2>Registrar estudiante</h2>
+
+            <div class="formulario">
+
+                <div class="campo">
+
+                    <label>Nombre completo</label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Ejemplo: Juan Pérez"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>Grado</label>
+
+                    <input
+                        type="text"
+                        id="grado"
+                        placeholder="Ejemplo: 2° Año"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>Sección</label>
+
+                    <input
+                        type="text"
+                        id="seccion"
+                        placeholder="Ejemplo: A"
+                    >
+
+                </div>
+
+
+                <button
+                    class="btn-registrar"
+                    onclick="registrarEstudiante()"
+                >
+                    Registrar estudiante
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- LISTA DE ESTUDIANTES -->
+
+        <div class="card">
+
+            <div class="titulo-lista">
+
+                <h2>Lista de estudiantes</h2>
+
+                <p id="contador">
+                    0 estudiantes registrados
+                </p>
+
+            </div>
+
+
+            <div id="tablaEstudiantes">
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            Registro de Estudiantes © 2026
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
